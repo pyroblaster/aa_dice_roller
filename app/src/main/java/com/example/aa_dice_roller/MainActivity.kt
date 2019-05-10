@@ -54,7 +54,7 @@ class MainActivity : AppCompatActivity() {
         val diceRollButton: Button = findViewById(R.id.diceRoll)
         diceRollButton.setOnClickListener {
             if(diceRollsLeft>0) {
-                if(dice1Flag != false) diceRoll1()
+                if(dice1Flag == true) diceRoll1()
                 if(dice2Flag == true) diceRoll2()
                 if(dice3Flag == true) diceRoll3()
                 if(dice4Flag == true) diceRoll4()
@@ -69,6 +69,12 @@ class MainActivity : AppCompatActivity() {
         diceResetButton.setOnClickListener {
             diceRollsLeft = 2
             rollsLeft.text = diceRollsLeft.toString()
+            dice1Flag = true
+            dice2Flag = true
+            dice3Flag = true
+            dice4Flag = true
+            dice5Flag = true
+            dice6Flag = true
         }
 
     }
