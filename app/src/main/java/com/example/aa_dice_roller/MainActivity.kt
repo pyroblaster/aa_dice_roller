@@ -79,14 +79,14 @@ class MainActivity : AppCompatActivity() {
 
     }
 
-    fun diceFlag(diceFlag:Boolean):Boolean{
+    private fun diceFlag(diceFlag:Boolean):Boolean{
         var dFlag = diceFlag
-        if (diceFlag==true) dFlag == false
+        if (dFlag==true) dFlag == false
         else dFlag = true
         return dFlag
     }
 
-    fun diceRoll1(){
+    private fun diceRoll1(){
         var randFerit = (1..6).random()
         when (randFerit){
             1 -> dice1.setImageResource(R.drawable.feritroll1)
@@ -98,7 +98,7 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-    fun diceRoll2(){
+    private fun diceRoll2(){
         var randFerit = (1..6).random()
         when (randFerit){
             1 -> dice2.setImageResource(R.drawable.feritroll1)
@@ -110,7 +110,7 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-    fun diceRoll3(){
+    private fun diceRoll3(){
         var randFerit = (1..6).random()
         when (randFerit){
             1 -> dice3.setImageResource(R.drawable.feritroll1)
@@ -122,7 +122,7 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-    fun diceRoll4(){
+    private fun diceRoll4(){
         var randFerit = (1..6).random()
         when (randFerit){
             1 -> dice4.setImageResource(R.drawable.feritroll1)
@@ -134,7 +134,7 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-    fun diceRoll5(){
+    private fun diceRoll5(){
         var randFerit = (1..6).random()
         when (randFerit){
             1 -> dice5.setImageResource(R.drawable.feritroll1)
@@ -146,7 +146,7 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-    fun diceRoll6(){
+    private fun diceRoll6(){
         var randFerit = (1..6).random()
         when (randFerit){
             1 -> dice6.setImageResource(R.drawable.feritroll1)
