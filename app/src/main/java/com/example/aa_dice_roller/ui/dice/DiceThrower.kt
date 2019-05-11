@@ -47,7 +47,7 @@ class DiceThrower : BaseActivity() {
     private fun reset(){
         diceRollsLeft = 2
         updateRollsText()
-        diceFlagReturnAfterReset()
+        diceFlagReturnAfterReset(diceFlag)
     }
     fun updateRollsText(){
         rollsLeft.text = diceRollsLeft.toString()
